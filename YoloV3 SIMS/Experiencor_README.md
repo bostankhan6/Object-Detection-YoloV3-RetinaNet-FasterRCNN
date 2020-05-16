@@ -1,3 +1,7 @@
+# A Shout out to Experiencor for creating this repo!
+This is the original readme file provided by Experiencor for using this repo for training you models. The link for the original repo is given below:
+https://github.com/experiencor/keras-yolo3
+
 # YOLO3 (Detection, Training, and Evaluation)
 
 ## Dataset and Model
