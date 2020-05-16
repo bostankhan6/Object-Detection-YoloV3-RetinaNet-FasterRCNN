@@ -1,0 +1,16 @@
+Airliner: 0.9534
+Boat: 0.8922
+Bus: 0.8037
+Car: 0.8145
+CharteredAircraft: 0.8592
+FighterAircraft: 1.0000
+Helicopter: 0.2222
+LongVehicle: 0.6805
+Others: 0.1043
+PropellerAircraft: 0.7322
+PushbackTruck: 0.0364
+StairTruck: 0.2615
+TrainerAircraft: 0.8634
+Truck: 0.5947
+Van: 0.6432
+mAP: 0.6307

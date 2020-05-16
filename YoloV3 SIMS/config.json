@@ -1,0 +1,56 @@
+{
+    "model" : {
+        "min_input_size":       352,
+        "max_input_size":       448,
+        "anchors":              [16,21, 21,45, 25,79, 35,27, 42,54, 62,32, 76,95, 135,184, 238,302],
+        "labels":               [
+                                "Airliner",
+                                "Boat",
+                                "Bus",
+                                "Car",
+                                "CharteredAircraft",
+                                "FighterAircraft",
+                                "Helicopter",
+                                "LongVehicle",
+                                "Others",
+                                "PropellerAircraft",
+                                "PushbackTruck",
+                                "StairTruck",
+                                "TrainerAircraft",
+                                "Truck",
+                                "Van"
+                                ]
+    },
+
+    "train": {
+        "train_image_folder":   "./SIMS_Images/content/SIMS_Dataset/train_images/",
+        "train_annot_folder":   "./SIMS_VOC_Annotations2/content/SIMS_VOC_Annotations2/train_annotations/",
+        "cache_name":           "SIMS.pkl",
+
+        "train_times":          2,
+        "batch_size":           8,
+        "learning_rate":        1e-4,
+        "nb_epochs":            147,
+        "warmup_epochs":        3,
+        "ignore_thresh":        0.5,
+        "gpus":                 "0",
+
+        "grid_scales":          [1,1,1],
+        "obj_scale":            5,
+        "noobj_scale":          1,
+        "xywh_scale":           1,
+        "class_scale":          1,
+
+        "tensorboard_dir":      "logs",
+        "saved_weights_name":   "SIMS.h5",
+        "debug":                true
+    },
+
+    "valid": {
+        "valid_image_folder":   "./SIMS_Images/content/SIMS_Dataset/test_images/",
+        "valid_annot_folder":   "./SIMS_VOC_Annotations2/content/SIMS_VOC_Annotations2/test_annotations/",
+        "cache_name":           "SIMS_val.pkl",
+
+        "valid_times":          1
+    }
+}
