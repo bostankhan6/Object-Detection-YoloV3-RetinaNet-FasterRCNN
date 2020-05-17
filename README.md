@@ -65,5 +65,6 @@ Bostan Khan (bostankhan6@gmail.com)
 
 ## Acknowledgements
 [Implementation of YoloV3 in Keras by Experiencor](https://github.com/experiencor/keras-yolo3)
+
 [Implementation of Retinanet in Keras by Fizyr](https://github.com/fizyr/keras-retinanet)
 
