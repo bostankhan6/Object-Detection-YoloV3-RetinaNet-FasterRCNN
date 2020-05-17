@@ -17,7 +17,7 @@ It has been tested to work with Python 2.7.13 and 3.5.3.
 
 **You may directly go to the "Detection" section for using the trained model (download link given below) for using it on your own Aerial Images.**
 
-![Download the trained Yolo Model](https://drive.google.com/open?id=1BGqg6ilnZDJDpogyk-3Nxyhy2gNAiQWZ)
+![Download the trained Yolo Model](https://drive.google.com/file/d/1BGqg6ilnZDJDpogyk-3Nxyhy2gNAiQWZ/view?usp=sharing)
 
 ## Training
 
