@@ -51,3 +51,19 @@ The detailed mAP values for each class of the dataset are in the respective fold
 
 ![YoloV3Result](/YoloV3%20SIMS/results/0122.jpg)
 
+#### RetinaNet
+
+![RetinaNetResult](/Retinanet/results/Retinanet%20result.png)
+
+### Training Graphs
+
+#### YoloV3 Loss Graph
+![YoloV3Loss](/YoloV3%20SIMS/results/loss_graph.jpg)
+
+## Contact
+Bostan Khan (bostankhan6@gmail.com)
+
+## Acknowledgements
+[Implementation of YoloV3 in Keras by Experiencor](https://github.com/experiencor/keras-yolo3)
+[Implementation of Retinanet in Keras by Fizyr](https://github.com/fizyr/keras-retinanet)
+
