@@ -31,3 +31,23 @@ The above implementations are dependent upon **Keras** and **Tensorflow** deep l
 ## Usage of Repos:
 Working instructions of the three architectures are given in their respective folders in this repo. The dependencies are mentioned along with how to train, evaluate and predict. The links of the trained models have also been provided and can be used to predict on your own setellite imagery.
 
+## Results
+The hypermeters that have been used for trainings of the 3 architecture models can be found in their respective repos. Different Epochs and learning rates have been used for different architectures. The batch size of 4, however, was consitent for all because the models were trained either on Colab or a VM both of which had Tesla K80 (12GB GPU Memory).
+
+### Quantitative Results
+Mean Average Precision (mAP) has been used as the performance metric for quantitative results given below.
+
+| Model      | Validation mAP       | Test mAP             |
+|------------|----------------------|----------------------|
+| YoloV3     | 0.6453               | 0.6307               |
+| RetinaNet  | Training in Progress | Training in Progress |
+| FasterRCNN | Pending              | Pending              |
+
+The detailed mAP values for each class of the dataset are in the respective folders of the detection methods.
+
+### Qualitative Results:
+
+#### YoloV3
+
+![YoloV3Result](/YoloV3%20SIMS/results/0122.jpg)
+
