@@ -52,35 +52,58 @@ The configuration file is a json file, which looks like this:
     "model" : {
         "min_input_size":       352,
         "max_input_size":       448,
-        "anchors":              [10,13,  16,30,  33,23,  30,61,  62,45,  59,119,  116,90,  156,198,  373,326],
-        "labels":               ["raccoon"]
+        "anchors":              [16,21, 21,45, 25,79, 35,27, 42,54, 62,32, 76,95, 135,184, 238,302],
+        "labels":               [
+                                "Airliner",
+                                "Boat",
+                                "Bus",
+                                "Car",
+                                "CharteredAircraft",
+                                "FighterAircraft",
+                                "Helicopter",
+                                "LongVehicle",
+                                "Others",
+                                "PropellerAircraft",
+                                "PushbackTruck",
+                                "StairTruck",
+                                "TrainerAircraft",
+                                "Truck",
+                                "Van"
+                                ]
     },
 
     "train": {
-        "train_image_folder":   "/home/andy/data/raccoon_dataset/images/",
-        "train_annot_folder":   "/home/andy/data/raccoon_dataset/anns/",      
-          
-        "train_times":          10,             # the number of time to cycle through the training set, useful for small datasets
-        "pretrained_weights":   "",             # specify the path of the pretrained weights, but it's fine to start from scratch
-        "batch_size":           16,             # the number of images to read in each batch
-        "learning_rate":        1e-4,           # the base learning rate of the default Adam rate scheduler
-        "nb_epoch":             50,             # number of epoches
-        "warmup_epochs":        3,              # the number of initial epochs during which the sizes of the 5 boxes in each cell is forced to match the sizes of the 5 anchors, this trick seems to improve precision emperically
-        "ignore_thresh":        0.5,
-        "gpus":                 "0,1",
+        "train_image_folder":   "./SIMS_Images/content/SIMS_Dataset/train_images/",
+        "train_annot_folder":   "./SIMS_VOC_Annotations2/content/SIMS_VOC_Annotations2/train_annotations/",
+        "cache_name":           "SIMS.pkl",
 
-        "saved_weights_name":   "raccoon.h5",
-        "debug":                true            # turn on/off the line that prints current confidence, position, size, class losses and recall
+        "train_times":          2,
+        "batch_size":           8,
+        "learning_rate":        1e-4,
+        "nb_epochs":            147,
+        "warmup_epochs":        3,
+        "ignore_thresh":        0.5,
+        "gpus":                 "0",
+
+        "grid_scales":          [1,1,1],
+        "obj_scale":            5,
+        "noobj_scale":          1,
+        "xywh_scale":           1,
+        "class_scale":          1,
+
+        "tensorboard_dir":      "logs",
+        "saved_weights_name":   "SIMS.h5",
+        "debug":                true
     },
 
     "valid": {
-        "valid_image_folder":   "",
-        "valid_annot_folder":   "",
+        "valid_image_folder":   "./SIMS_Images/content/SIMS_Dataset/test_images/",
+        "valid_annot_folder":   "./SIMS_VOC_Annotations2/content/SIMS_VOC_Annotations2/test_annotations/",
+        "cache_name":           "SIMS_val.pkl",
 
         "valid_times":          1
     }
 }
-
 ```
 
 The ```labels``` setting lists the labels to be trained on. Only images, which has labels being listed, are fed to the network. The rest images are simply ignored. By this way, a Dog Detector can easily be trained using VOC or COCO dataset by setting ```labels``` to ```['dog']```.
