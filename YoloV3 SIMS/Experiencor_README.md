@@ -1,27 +1,9 @@
 # A Shout out to Experiencor for creating this repo!
-This is the original readme file provided by Experiencor for using this repo for training you models. The link for the original repo is given below:
+
+#### Note: This is an edited part of the the original readme file provided by Experiencor for using this repo. The link for the original repo is given below:
 https://github.com/experiencor/keras-yolo3
 
 # YOLO3 (Detection, Training, and Evaluation)
-
-## Dataset and Model
-
-Dataset | mAP | Demo | Config | Model
-:---:|:---:|:---:|:---:|:---:
-Kangaroo Detection (1 class) (https://github.com/experiencor/kangaroo) | 95% | https://youtu.be/URO3UDHvoLY | check zoo | https://bit.ly/39rLNoE
-License Plate Detection (European in Romania) (1 class) (https://github.com/RobertLucian/license-plate-dataset) | 90% | https://youtu.be/HrqzIXFVCRo | check zoo | https://bit.ly/2tIpvPl
-Raccoon Detection (1 class) (https://github.com/experiencor/raccoon_dataset) | 98% | https://youtu.be/lxLyLIL7OsU | check zoo | https://bit.ly/39rLNoE
-Red Blood Cell Detection (3 classes) (https://github.com/experiencor/BCCD_Dataset) | 84% | https://imgur.com/a/uJl2lRI | check zoo | https://bit.ly/39rLNoE
-VOC (20 classes) (http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) | 72% | https://youtu.be/0RmOI6hcfBI | check zoo | https://bit.ly/39rLNoE
-
-## Todo list:
-- [x] Yolo3 detection
-- [x] Yolo3 training (warmup and multi-scale)
-- [x] mAP Evaluation
-- [x] Multi-GPU training
-- [x] Evaluation on VOC
-- [ ] Evaluation on COCO
-- [ ] MobileNet, DenseNet, ResNet, and VGG backends
 
 ## Installing
 
@@ -33,19 +15,13 @@ And for the GPU to work, make sure you've got the drivers installed beforehand (
 
 It has been tested to work with Python 2.7.13 and 3.5.3.
 
-## Detection
-
-Grab the pretrained weights of yolo3 from https://pjreddie.com/media/files/yolov3.weights.
-
-```python yolo3_one_file_to_detect_them_all.py -w yolo3.weights -i dog.jpg``` 
+**You may directly go to the detetion section for using the trained model the link of which is given in this repo for using it on your own Aerial Images.**
 
 ## Training
 
 ### 1. Data preparation 
 
-Download the Raccoon dataset from from https://github.com/experiencor/raccoon_dataset.
-
-Organize the dataset into 4 folders:
+Organize your dataset into 4 folders:
 
 + train_image_folder <= the folder that contains the train images.
 
@@ -107,7 +83,7 @@ The configuration file is a json file, which looks like this:
 
 The ```labels``` setting lists the labels to be trained on. Only images, which has labels being listed, are fed to the network. The rest images are simply ignored. By this way, a Dog Detector can easily be trained using VOC or COCO dataset by setting ```labels``` to ```['dog']```.
 
-Download pretrained weights for backend at:
+###Download pretrained weights for backend at:
 
 https://bit.ly/39rLNoE
 
@@ -125,7 +101,7 @@ Copy the generated anchors printed on the terminal to the ```anchors``` setting 
 
 By the end of this process, the code will write the weights of the best model to file best_weights.h5 (or whatever name specified in the setting "saved_weights_name" in the config.json file). The training process stops when the loss on the validation set is not improved in 3 consecutive epoches.
 
-### 5. Perform detection using trained weights on image, set of images, video, or webcam
+## Perform detection using trained weights on image, set of images, video, or webcam
 `python predict.py -c config.json -i /path/to/image/or/video`
 
 It carries out detection on the image and write the image with detected bounding boxes to the same folder.
