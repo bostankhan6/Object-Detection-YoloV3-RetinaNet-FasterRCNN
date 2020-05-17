@@ -12,7 +12,7 @@ It has been tested to work with Python 2.7.13 and 3.5.3.
 
 **You may directly go to the "Detection" section for using the trained model (download link given below) for using it on your own Aerial Images.**
 
-https://drive.google.com/file/d/1BGqg6ilnZDJDpogyk-3Nxyhy2gNAiQWZ/view?usp=sharing
+[Download the trained Yolo Model](https://drive.google.com/open?id=1BGqg6ilnZDJDpogyk-3Nxyhy2gNAiQWZ)
 
 ## Training
 
@@ -105,7 +105,7 @@ The ```labels``` setting lists the labels to be trained on. Only images, which h
 
 #### Download pretrained weights for backend at:
 
-https://drive.google.com/file/d/1huTZhkx3S7oLakaNeguaV98lleE8oYeF/view?usp=sharing
+[Download the Backend Yolo Model weights](https://drive.google.com/file/d/1huTZhkx3S7oLakaNeguaV98lleE8oYeF/view?usp=sharing)
 
 **This weights must be put in the root folder of the repository. They are the pretrained weights for the backend only and will be loaded during model creation. The code does not work without this weights.**
 
