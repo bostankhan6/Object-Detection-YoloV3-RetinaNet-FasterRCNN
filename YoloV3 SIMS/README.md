@@ -83,7 +83,7 @@ The configuration file is a json file, which looks like this:
 
 The ```labels``` setting lists the labels to be trained on. Only images, which has labels being listed, are fed to the network. The rest images are simply ignored. By this way, a Dog Detector can easily be trained using VOC or COCO dataset by setting ```labels``` to ```['dog']```.
 
-###Download pretrained weights for backend at:
+#### Download pretrained weights for backend at:
 
 https://bit.ly/39rLNoE
 
