@@ -1,6 +1,4 @@
-## A Shout out to Experiencor for creating this repo!
-
-#### Note: This is an edited part of the the original readme file provided by Experiencor for using this repo. The link for the original repo is given below:
+#### Note: This is an edited version of the the original readme file provided by Experiencor at his repo the link of which is given below:
 https://github.com/experiencor/keras-yolo3
 
 ## YOLO3 (Detection, Training, and Evaluation)
