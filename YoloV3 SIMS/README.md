@@ -15,7 +15,7 @@ And for the GPU to work, make sure you've got the drivers installed beforehand (
 
 It has been tested to work with Python 2.7.13 and 3.5.3.
 
-**You may directly go to the detetion section for using the trained model the link of which is given below using it on your own Aerial Images.**
+**You may directly go to the "Detection" section for using the trained model (download link given below) for using it on your own Aerial Images.**
 
 ![Download the trained Yolo Model](https://drive.google.com/open?id=1BGqg6ilnZDJDpogyk-3Nxyhy2gNAiQWZ)
 
