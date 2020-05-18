@@ -55,6 +55,8 @@ The detailed mAP values for each class of the dataset are in the respective fold
 
 ![RetinaNetResult](/Retinanet/results/Retinanet%20result.png)
 
+![RetinaNetResult](/Retinanet/results/Retinanet%20result1.png)
+
 ### Training Graphs
 
 #### YoloV3 Loss Graph
