@@ -140,7 +140,7 @@ Particularly helpful is the `--annotations` flag which displays your annotations
 * This repository is [tested](https://github.com/fizyr/keras-retinanet/blob/master/.travis.yml) using OpenCV 3.4.
 * This repository is [tested](https://github.com/fizyr/keras-retinanet/blob/master/.travis.yml) using Python 2.7 and 3.6.
 
-##Acknowledgements
+## Acknowledgements
 [Implementation of Retinanet in Keras by Fizyr](https://github.com/fizyr/keras-retinanet)
 
 This readme file is an edited version of the readme file used for the repo in the link given above.
