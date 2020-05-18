@@ -40,7 +40,7 @@ Mean Average Precision (mAP) has been used as the performance metric for quantit
 | Model      | Validation mAP       | Test mAP             |
 |------------|----------------------|----------------------|
 | YoloV3     | 0.6453               | 0.6307               |
-| RetinaNet  | Training in Progress | Training in Progress |
+| RetinaNet  | 0.6706               | 0.6613               |
 | FasterRCNN | Pending              | Pending              |
 
 The detailed mAP values for each class of the dataset are in the respective folders of the detection methods.
@@ -53,9 +53,9 @@ The detailed mAP values for each class of the dataset are in the respective fold
 
 #### RetinaNet
 
-![RetinaNetResult](/Retinanet/results/Retinanet%20result.png)
-
 ![RetinaNetResult](/Retinanet/results/Retinanet%20result1.png)
+
+![RetinaNetResult](/Retinanet/results/Retinanet%20result.png)
 
 ### Training Graphs
 
