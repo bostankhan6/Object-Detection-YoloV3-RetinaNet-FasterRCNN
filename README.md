@@ -62,6 +62,12 @@ The detailed mAP values for each class of the dataset are in the respective fold
 #### YoloV3 Loss Graph
 ![YoloV3Loss](/YoloV3%20SIMS/results/loss_graph.jpg)
 
+#### Retinanet Classification Loss Graph
+![RetinaNetClassificationLoss](/Retinanet/results/classification_loss.jpg)
+
+#### Retinanet Regression Loss Graph
+![RetinaNetRegressionLoss](/Retinanet/results/regression_loss.jpg)
+
 ## Contact
 Bostan Khan (bostankhan6@gmail.com)
 
