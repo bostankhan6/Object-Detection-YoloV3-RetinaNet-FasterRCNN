@@ -1,4 +1,6 @@
-# Keras RetinaNet
+# RetinaNet
+
+[Implementation of Retinanet in Keras by Fizyr](https://github.com/fizyr/keras-retinanet)
 
 ## Installation
 
