@@ -1,0 +1,18 @@
+4707 instances of class Boat with average precision: 0.9411
+141 instances of class TrainerAircraft with average precision: 0.9597
+190 instances of class Others with average precision: 0.1171
+16 instances of class Helicopter with average precision: 0.4665
+8 instances of class FighterAircraft with average precision: 1.0000
+212 instances of class Airliner with average precision: 0.9727
+864 instances of class Truck with average precision: 0.6394
+381 instances of class LongVehicle with average precision: 0.5515
+126 instances of class StairTruck with average precision: 0.3486
+68 instances of class PushbackTruck with average precision: 0.1111
+41 instances of class PropellerAircraft with average precision: 0.7055
+631 instances of class Bus with average precision: 0.7303
+2199 instances of class Van with average precision: 0.7288
+155 instances of class CharteredAircraft with average precision: 0.9054
+11474 instances of class Car with average precision: 0.8818
+Inference time for 1741 images: 0.2802
+mAP using the weighted average of precisions among classes: 0.8473
+mAP: 0.6706
