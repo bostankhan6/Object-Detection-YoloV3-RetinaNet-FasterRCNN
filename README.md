@@ -12,7 +12,7 @@ Satellite Imagery Multi-vehicles Dataset (SIMD) contains 5,000 images of 1024 x 
 | LongVehicle | Helicopter    | CharteredAircraft |
 | Bus         | Boat          | FighterAircraft   |
 
-#### Project Status: [Active]
+#### Project Status: [Complete]
 
 ## Architectures and Network Diagrams
 
