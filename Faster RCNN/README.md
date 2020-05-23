@@ -1,8 +1,9 @@
 # Keras-FRCNN For Object Detection in Satelite Images (SIMD Dataset)
 Faster-RCNN: Detection of Objects in aerial images in the SIMD dataset. The code can be used to detect objects in your own aerial images with the model that can be downloaded from the given link.
 
-Repo cloned from https://github.com/kbardool/keras-frcnn
-This readme file is edited version from the one found in the above repo.
+Repo cloned from https://github.com/kbardool/keras-frcnn.
+
+This readme file is as edited version of the one found in the above repo. The original did not have instruction on using the measure_map.py file and I also faced some bugs that have been removed.
 
 USAGE:
 - Both theano and tensorflow backends are supported. However compile times are very high in theano, and tensorflow is highly recommended.
@@ -25,6 +26,9 @@ line containing:
 
 - Running `train_frcnn.py` will write weights to disk to an hdf5 file, as well as all the setting of the training run to a `pickle` file. These
 settings can then be loaded by `test_frcnn.py` for any testing.
+
+- measure_mappy can be used to perform evalutation, given wieghts and a config file (already given in this repo. The measure_map.py can be run with the following command if you are using the simple parser:
+    `python measure_map.py -o simple -p test.csv` 
 
 - test_frcnn.py can be used to perform inference, given pretrained weights and a config file. Specify a path to the folder containing
 images:
