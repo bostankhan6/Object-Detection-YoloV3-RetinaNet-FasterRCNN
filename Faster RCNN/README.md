@@ -3,7 +3,7 @@ Faster-RCNN: Detection of Objects in aerial images in the SIMD dataset. The code
 
 Repo cloned from https://github.com/kbardool/keras-frcnn.
 
-This readme file is as edited version of the one found in the above repo. The original did not have instruction on using the measure_map.py file and I also faced some bugs that have been removed.
+This readme file is as edited version of the one found in the above repo. The original did not have instructions on using the measure_map.py file. I faced some bugs in the measure_map.py file (Python 3.5) that I have removed.
 
 USAGE:
 - Both theano and tensorflow backends are supported. However compile times are very high in theano, and tensorflow is highly recommended.
