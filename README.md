@@ -41,7 +41,7 @@ Mean Average Precision (mAP) has been used as the performance metric for quantit
 |------------|----------------------|----------------------|
 | YoloV3     | 0.6453               | 0.6307               |
 | RetinaNet  | 0.6706               | 0.6613               |
-| FasterRCNN | Pending              | Pending              |
+| FasterRCNN | 0.6590               | 0.6853               |
 
 The detailed mAP values for each class of the dataset are in the respective folders of the detection methods.
 
